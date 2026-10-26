@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+Welcome to rock, paper and scissors game. Win and earn rewards
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Rewards Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>⚔️ Rock Paper Scissors</h1>
+        <p class="subtitle">Play. Win. Earn Rewards!</p>
+
+        <div class="score-board">
+            <div class="score-box">
+                <h3>You</h3>
+                <p id="user-score">0</p>
+            </div>
+
+            <div class="score-box">
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+
+        <h2 id="result">Choose your move!</h2>
+
+        <div class="moves">
+            <div class="move-display">
+                <span id="user-move">❔</span>
+                <p>You</p>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="move-display">
+                <span id="computer-move">🤖</span>
+                <p>Computer</p>
+            </div>
+        </div>
+
+        <p class="instruction">Choose your weapon!</p>
+
+        <div class="buttons">
+            <button onclick="playGame('rock')">
+                ✊<span>Rock</span>
+            </button>
+
+            <button onclick="playGame('paper')">
+                📄<span>Paper</span>
+            </button>
+
+            <button onclick="playGame('scissors')">
+                ✂️<span>Scissors</span>
+            </button>
+        </div>
+
+        <section class="rewards">
+            <h2>🏆 Reward Center</h2>
+
+            <div class="reward-card">
+                <span>🪙</span>
+                <div>
+                    <h3>100 Coins</h3>
+                    <p>Be the first to reach 5 points</p>
+                </div>
+                <strong id="reward-5">🔒</strong>
+            </div>
+
+            <div class="reward-card">
+                <span>💰</span>
+                <div>
+                    <h3>200 Coins</h3>
+                    <p>Be the first to reach 10 points</p>
+                </div>
+                <strong id="reward-10">🔒</strong>
+            </div>
+
+    <div class="reward-card">
+        <span>🏎️</span>
+    <div>
+        <h3>Luxury Car</h3>
+        <p>Be the first to reach 20 points</p>
+    </div>
+    <strong id="reward-100">🔒</strong>
+</div>
+
+
+            <div class="coin-display">
+                🪙 Your Coins: <span id="total-coins">0</span>
+            </div>
+        </section>
+
+        <button class="reset-button" onclick="resetGame()">
+            🔄 Reset Game
+        </button>
+
+        <p class="footer">Built with HTML, CSS & JavaScript</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
